@@ -23,6 +23,8 @@ import java.lang.reflect.Method;
 public class SimulatedSpireButton extends TopPanelItem {
     private static final Texture IMG = TextureLoader.getTexture("HalationImages/ui/SimulatedSpireButton.png");
     public static final String ID = "halation:SimulatedSpireButton";
+    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(ID);
+    public static final String[] TEXT = uiStrings.TEXT;
 
     public SimulatedSpireButton() {
         super(IMG, ID);
@@ -41,7 +43,7 @@ public class SimulatedSpireButton extends TopPanelItem {
             return;
         }
 
-        AbstractDungeon.gridSelectScreen.open(r.secondDeck, 999, "Second Deck", false, false, false, false);
+        AbstractDungeon.gridSelectScreen.open(r.secondDeck, 999, TEXT[0], false, false, false, false);
         AbstractDungeon.overlayMenu.cancelButton.show("Return");
     }
 

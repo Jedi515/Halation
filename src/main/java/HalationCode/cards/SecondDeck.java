@@ -7,9 +7,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class SecondDeck extends CustomCard {
     public static final String ID = "halation:SecondDeck";
+    private static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
 
     public SecondDeck() {
-        super(ID, "Second Deck", null, -2, "", CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, null, -2, "", CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
     }
 
 

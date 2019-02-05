@@ -141,12 +141,31 @@ public class HalationModInitializer implements
         }
     }
 
+    public String makePath(String filename)
+    {
+        String toReturn = "localization/";
+        switch (Settings.language)
+        {
+            case RUS:
+                toReturn += "rus/";
+                break;
+            case ENG:
+                toReturn += "eng/";
+                break;
+            default:
+                toReturn += "eng/";
+                break;
+        }
+        return (toReturn + filename);
+    }
+
     @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(PowerStrings.class, "localization/HalationPowerStrings.json");
-        BaseMod.loadCustomStringsFile(RelicStrings.class, "localization/HalationRelicStrings.json");
-        BaseMod.loadCustomStringsFile(EventStrings.class, "localization/HalationEventStrings.json");
-        BaseMod.loadCustomStringsFile(CardStrings.class, "localization/HalationCardStrings.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, makePath("HalationPowerStrings.json"));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, makePath("HalationRelicStrings.json"));
+        BaseMod.loadCustomStringsFile(EventStrings.class, makePath("HalationEventStrings.json"));
+        BaseMod.loadCustomStringsFile(CardStrings.class, makePath("HalationCardStrings.json"));
+        BaseMod.loadCustomStringsFile(UIStrings.class, assetPath(makePath("HalationUIStrings.json")));
     }
 
     @Override

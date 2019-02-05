@@ -1,0 +1,23 @@
+{
+  "halation:LetterOfAdmiration": {
+    "NAME": "Письмо о воздыхании",
+    "DESCRIPTION": "Вы берёте 1 карту. NL Даёт [E]. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Вы берёте 1 карту. NL Даёт [E] [E] . NL Сжигается."
+  },
+  "halation:LetterOfRespect": {
+    "NAME": "Письмо об уважении",
+    "DESCRIPTION": "Вы берёте 1 карту. NL Даёт !M! Силы. NL Сжигается."
+  },
+  "halation:LetterOfLove": {
+    "NAME": "Письмо о любви",
+    "DESCRIPTION": "Вы берёте 1 карту. NL Даёт !M! Временных_ОЗ. NL Сжигается."
+  },
+  "halation:MainDeck": {
+    "NAME": "Основная колода",
+    "DESCRIPTION": ""
+  },
+  "halation:SecondDeck": {
+    "NAME": "Вторая колода",
+    "DESCRIPTION": ""
+  }
+}

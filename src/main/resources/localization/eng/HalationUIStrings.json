@@ -1,0 +1,36 @@
+{
+  "halation:OrihimeAction": {
+    "TEXT": [
+      " NL Ethereal.",
+      " NL Exhaust."
+    ]
+  },
+  "halation:SimulatedSpireChoice": {
+    "TEXT": [
+      "Pick a deck for combat."
+    ]
+  },
+  "halation:SimulatedSpireUpgrade": {
+   "TEXT": [
+     "Upgrade Second Deck",
+     "Upgrade Second Deck"
+   ]
+  },
+  "halation:SimulatedSpireAddCard": {
+    "TEXT": [
+      "Add a card to your second deck",
+      "] #rLose #ryour #rstarting #rRelic. #gObtain #ySimulated #ySpire ["
+    ]
+  },
+  "halation:SimulatedSpireButton": {
+    "TEXT": [
+      "Second Deck"
+    ]
+  },
+  "halation:RainbowCloudsAction": {
+    "TEXT": [
+      "Pick ",
+      " Cards to add to your hand."
+    ]
+  }
+}

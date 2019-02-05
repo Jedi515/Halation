@@ -11,5 +11,13 @@
   "halation:LetterOfLove": {
     "NAME": "Letter of Love",
     "DESCRIPTION": "Draw 1 card. NL Gain !M! Temporary HP. NL Exhaust."
+  },
+  "halation:MainDeck": {
+    "NAME": "Main Deck",
+    "DESCRIPTION": ""
+  },
+  "halation:SecondDeck": {
+    "NAME": "Second Deck",
+    "DESCRIPTION": ""
   }
 }

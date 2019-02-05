@@ -7,12 +7,15 @@ import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
 
 public class UpgradeSecondDeck extends AbstractCampfireOption {
 
+    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireUpgrade");
+    public static final String[] TEXT = uiStrings.TEXT;
+
     public UpgradeSecondDeck() {
         super();
         this.img = ImageMaster.CAMPFIRE_SMITH_BUTTON;
         this.usable = true;
-        this.label = "Upgrade Second Deck";
-        this.description = "Upgrade Second Deck";
+        this.label = TEXT[0];
+        this.description = TEXT[1];
     }
 
     public void useOption() {

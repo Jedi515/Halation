@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 public class RandomEtherealCardToHand extends AbstractGameAction {
     private boolean isRare = false;
     private boolean isCurse = false;
+    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("halation:OrihimeAction");
+    public static final String[] TEXT = uiStrings.TEXT;
 
     public RandomEtherealCardToHand(boolean isRare, boolean isCurse) {
         this.actionType = ActionType.CARD_MANIPULATION;
@@ -23,11 +25,11 @@ public class RandomEtherealCardToHand extends AbstractGameAction {
                 AbstractCard c = AbstractDungeon.getCard(AbstractCard.CardRarity.RARE, AbstractDungeon.cardRng).makeStatEquivalentCopy();
                 if (!c.isEthereal) {
                     c.isEthereal = true;
-                    c.rawDescription = c.rawDescription + " NL Ethereal.";
+                    c.rawDescription = c.rawDescription + TEXT[0];
                 }
                if (!c.exhaust) {
                    c.exhaust = true;
-                   c.rawDescription = c.rawDescription + " NL Exhaust.";
+                   c.rawDescription = c.rawDescription + TEXT[1];
                }
                 c.initializeDescription();
                 AbstractDungeon.actionManager.addToBottom(new MakeStatEquivalentCopyBullshit(c));
@@ -41,11 +43,11 @@ public class RandomEtherealCardToHand extends AbstractGameAction {
                 AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat().makeStatEquivalentCopy();
                 if (!c.isEthereal) {
                     c.isEthereal = true;
-                    c.rawDescription = c.rawDescription + " NL Ethereal.";
+                    c.rawDescription = c.rawDescription + TEXT[0];
                 }
                 if (!c.exhaust) {
                     c.exhaust = true;
-                    c.rawDescription = c.rawDescription + " NL Exhaust.";
+                    c.rawDescription = c.rawDescription + TEXT[1];
                 }
                 c.initializeDescription();
                 AbstractDungeon.actionManager.addToBottom(new MakeStatEquivalentCopyBullshit(c));

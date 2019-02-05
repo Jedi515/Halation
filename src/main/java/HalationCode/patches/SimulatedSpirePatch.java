@@ -30,6 +30,10 @@ import java.util.ArrayList;
 
 
 public class SimulatedSpirePatch {
+
+    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireAddCard");
+    public static final String[] TEXT = uiStrings.TEXT;
+
     @SpirePatch(
             clz = CombatRewardScreen.class,
             method = "setupItemReward"
@@ -51,10 +55,10 @@ public class SimulatedSpirePatch {
                 for (AbstractCard c : secondSimulatedSpireRewards.cards) {
                     IsSimulatedSpireField.isSimulatedSpireReward.set(c, true);
                 }
-                secondSimulatedSpireRewards.text = "Add a card to your second deck";
+                secondSimulatedSpireRewards.text = TEXT[0];
                 __instance.rewards.add(secondSimulatedSpireRewards);
             }
-            simulatedSpireRewards.text = "Add a card to your second deck";
+            simulatedSpireRewards.text = TEXT[0];
             __instance.rewards.add(simulatedSpireRewards);
         }
     }
@@ -94,7 +98,7 @@ public class SimulatedSpirePatch {
     public static class AddToNeow {
         public static ArrayList<NeowRewardDef> Postfix(ArrayList<NeowRewardDef> __result, NeowReward __instance, final int category) {
                 if (category == 3) {
-                    __result.add(new NeowRewardDef(SIMULATED_SPIRE, "] #rLose #ryour #rstarting #rRelic. #gObtain #ySimulated #ySpire ["));
+                    __result.add(new NeowRewardDef(SIMULATED_SPIRE, TEXT[1]));
                 }
                 return __result;
         }

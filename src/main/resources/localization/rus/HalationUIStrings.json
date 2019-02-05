@@ -1,0 +1,36 @@
+{
+  "halation:OrihimeAction": {
+    "TEXT": [
+      " NL Эфирная.",
+      " NL Сжигается."
+    ]
+  },
+  "halation:SimulatedSpireChoice": {
+    "TEXT": [
+      "Выберите колоду, которую хотите использовать в бою."
+    ]
+  },
+  "halation:SimulatedSpireUpgrade": {
+   "TEXT": [
+     "Ковать вторую колоду",
+     "Улучшите карту во второй колоде"
+   ]
+  },
+  "halation:SimulatedSpireAddCard": {
+    "TEXT": [
+      "Добавьте карту во вторую колоду",
+      "] #rПотерять #rстартовую #rреликвию. #gПолучить #yСимулятор #yШпиля ["
+    ]
+  },
+  "halation:SimulatedSpireButton": {
+    "TEXT": [
+      "Вторая колода"
+    ]
+  },
+  "halation:RainbowCloudsAction": {
+    "TEXT": [
+      "Выберите и добавьте в руку ",
+      " карт."
+    ]
+  }
+}

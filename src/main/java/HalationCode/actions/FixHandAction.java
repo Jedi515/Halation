@@ -10,7 +10,9 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class FixHandAction extends AbstractGameAction {
-    public static final String[] TEXT = new String[]{"Pick ", " Cards to add to your hand."};
+
+    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("halation:RainbowCloudsAction");
+    public static final String[] TEXT = uiStrings.TEXT;
     private AbstractPlayer p;
 
     public FixHandAction(final int amount) {

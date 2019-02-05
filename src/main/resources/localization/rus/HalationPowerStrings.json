@@ -1,0 +1,52 @@
+{
+  "halation:RestartDamagePower": {
+    "NAME": "Повышение урона",
+    "DESCRIPTIONS": [
+      "Данный враг наносит на #y",
+      "% больше урона."
+    ]
+  },
+  "halation:InevitabilityPower": {
+    "NAME": "Заимствованное время",
+    "DESCRIPTIONS": [
+      "Вы не получаете урона в данном бою."
+    ]
+  },
+  "halation:NoSkillsPower": {
+    "NAME": "Неограниченность",
+    "DESCRIPTIONS": [
+      "Вы не можете разыгрывать #yНавыки в данном ходу."
+    ]
+  },
+  "halation:HalveDamagePower": {
+    "NAME": "Понижение урона",
+    "DESCRIPTIONS": [
+      "Вы наносите половину урона от #yАтак."
+    ]
+  },
+  "halation:NoDamagePower": {
+    "NAME": "Неуязвимость",
+    "DESCRIPTIONS": [
+      "Снижает весь получаемый в этом ходу урон до #b0."
+    ]
+  },
+  "halation:PrayingPower": {
+    "NAME": "Молитва",
+    "DESCRIPTIONS": [
+      "Восполняет #b",
+      " ОЗ всем участникам боя в начале вашего хода."
+    ]
+  },
+  "halation:AttractivePower": {
+    "NAME": "Привлекательность",
+    "DESCRIPTIONS": [
+      "Все прочие монстры считают данного врага чрезвычайно привлекательным. В результате чего он наносит на #b50% больше урона."
+    ]
+  },
+  "halation:ActualSurroundedPower": {
+    "NAME": "Окружён",
+    "DESCRIPTIONS": [
+      "Получает на #b50% больше урона."
+    ]
+  }
+}

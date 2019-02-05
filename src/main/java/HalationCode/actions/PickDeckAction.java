@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 public class PickDeckAction extends AbstractGameAction {
     public static boolean isPickingDeck = false;
     public static CardGroup tmp = null;
+    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireChoice");
+    public static final String[] TEXT = uiStrings.TEXT;
 
     public PickDeckAction() {
         this.duration = Settings.ACTION_DUR_FAST;
@@ -24,7 +26,7 @@ public class PickDeckAction extends AbstractGameAction {
             tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             tmp.addToBottom(new SecondDeck());
             tmp.addToBottom(new MainDeck());
-            AbstractDungeon.gridSelectScreen.open(tmp, 1, "Pick a deck for combat.", false, false);
+            AbstractDungeon.gridSelectScreen.open(tmp, 1, TEXT[0], false, false);
             tickDuration();
         } else {
             if (AbstractDungeon.gridSelectScreen.selectedCards.size() != 0) {
