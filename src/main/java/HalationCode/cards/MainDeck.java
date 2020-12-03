@@ -13,7 +13,7 @@ public class MainDeck extends CustomCard {
     public static final String NAME = cardStrings.NAME;
 
     public MainDeck() {
-        super(ID, NAME, "", -2, "", CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, (String) null, -2, "", CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
     }
 
 
