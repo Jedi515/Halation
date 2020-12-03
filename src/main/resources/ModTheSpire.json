@@ -2,7 +2,7 @@
   "modid": "Halation",
   "name": "Halation",
   "author_list": ["Reina", "RedDyeNo5"],
-  "description": "Content mod that adds relics, events and monsters.",
+  "description": "Content mod that adds relics, events and monsters. \n RUS translation: Jedi#3970",
   "version": "${project.version}",
   "sts_version": "${SlayTheSpire.version}",
   "mts_version": "${ModTheSpire.version}",

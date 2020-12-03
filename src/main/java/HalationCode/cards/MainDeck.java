@@ -3,6 +3,8 @@ package HalationCode.cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class MainDeck extends CustomCard {
@@ -11,7 +13,7 @@ public class MainDeck extends CustomCard {
     public static final String NAME = cardStrings.NAME;
 
     public MainDeck() {
-        super(ID, NAME, null, -2, "", CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, "", -2, "", CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
     }
 
 

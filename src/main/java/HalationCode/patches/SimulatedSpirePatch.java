@@ -9,8 +9,10 @@ import basemod.ReflectionHacks;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.neow.NeowReward;
 import com.megacrit.cardcrawl.neow.NeowReward.NeowRewardDef;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -30,9 +32,6 @@ import java.util.ArrayList;
 
 
 public class SimulatedSpirePatch {
-
-    public static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireAddCard");
-    public static final String[] TEXT = uiStrings.TEXT;
 
     @SpirePatch(
             clz = CombatRewardScreen.class,
@@ -55,10 +54,10 @@ public class SimulatedSpirePatch {
                 for (AbstractCard c : secondSimulatedSpireRewards.cards) {
                     IsSimulatedSpireField.isSimulatedSpireReward.set(c, true);
                 }
-                secondSimulatedSpireRewards.text = TEXT[0];
+                secondSimulatedSpireRewards.text = CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireAddCard").TEXT[0];
                 __instance.rewards.add(secondSimulatedSpireRewards);
             }
-            simulatedSpireRewards.text = TEXT[0];
+            simulatedSpireRewards.text = CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireAddCard").TEXT[0];
             __instance.rewards.add(simulatedSpireRewards);
         }
     }
@@ -98,7 +97,7 @@ public class SimulatedSpirePatch {
     public static class AddToNeow {
         public static ArrayList<NeowRewardDef> Postfix(ArrayList<NeowRewardDef> __result, NeowReward __instance, final int category) {
                 if (category == 3) {
-                    __result.add(new NeowRewardDef(SIMULATED_SPIRE, TEXT[1]));
+                    __result.add(new NeowRewardDef(SIMULATED_SPIRE, CardCrawlGame.languagePack.getUIString("halation:SimulatedSpireAddCard").TEXT[1]));
                 }
                 return __result;
         }

@@ -45,12 +45,10 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheBeyond;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.EventStrings;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.*;
 
 @SpireInitializer
 public class HalationModInitializer implements
@@ -149,9 +147,6 @@ public class HalationModInitializer implements
             case RUS:
                 toReturn += "rus/";
                 break;
-            case ENG:
-                toReturn += "eng/";
-                break;
             default:
                 toReturn += "eng/";
                 break;
@@ -165,7 +160,7 @@ public class HalationModInitializer implements
         BaseMod.loadCustomStringsFile(RelicStrings.class, makePath("HalationRelicStrings.json"));
         BaseMod.loadCustomStringsFile(EventStrings.class, makePath("HalationEventStrings.json"));
         BaseMod.loadCustomStringsFile(CardStrings.class, makePath("HalationCardStrings.json"));
-        BaseMod.loadCustomStringsFile(UIStrings.class, assetPath(makePath("HalationUIStrings.json")));
+        BaseMod.loadCustomStringsFile(UIStrings.class, makePath("HalationUIStrings.json"));
     }
 
     @Override
